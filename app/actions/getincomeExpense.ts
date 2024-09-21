@@ -30,6 +30,7 @@ async function getIncomeExpense(): Promise<{
     return { income, expense: Math.abs(expense) };
   } catch (error) {
     return { error: "database Error" };
+    console.log(error);
   }
 }
 

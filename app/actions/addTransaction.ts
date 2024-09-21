@@ -48,6 +48,7 @@ if (!userId) {
      return {data: transactionData}
  } catch (error) {
     return {error: "Transaction not added"}
+    console.log(error);
  }
 }
 

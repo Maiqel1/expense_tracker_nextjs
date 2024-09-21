@@ -22,6 +22,7 @@ async function deleteTransaction(transactionId : string): Promise<{message? : st
        return{message : "Transaction deleted"}
     } catch (error) {
         return {error: "database Error"}
+        console.log(error);
     }
 }
 
